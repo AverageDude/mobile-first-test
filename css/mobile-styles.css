@@ -166,7 +166,7 @@ body {
 .article { 
   margin-top: 60px;
 
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
 }
 
 .article:first-Child {
