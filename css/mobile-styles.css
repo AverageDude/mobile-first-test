@@ -149,6 +149,33 @@ body {
   margin-left: auto;
 }
 
+/* CSS-правила для section.trendy - часть "Сейчас в тренде" */
+
+.articles-caption {
+  margin-top: 35px;
+}
+
+.trendy-article {
+  background-image: url('../images/trend1.jpg');
+  height: 235px;
+
+  margin-bottom: 2px;
+}
+
+.trendy-container-content {
+  border: 2px solid #8f8351;
+
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+
+.trendy-article-caption-text{
+  margin: 0;
+
+  color: #ffffff;
+}
+
 /* CSS-правила для main - основной (левой) части тела сайта */
 .main {
   background-color: ;
@@ -166,7 +193,7 @@ body {
 .article { 
   margin-top: 60px;
 
-  border-bottom: 3px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .article:first-Child {
@@ -214,7 +241,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   
   
@@ -250,7 +277,7 @@ body {
 }
 
 .article-text {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 22px;
   
   color: #0f0d0e;
@@ -508,24 +535,23 @@ body {
   background-color: #e5e5e5;
   
   box-sizing: border-box;
-  width: 1200px;
+  width: 90%;
   
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px
+  margin-top: 40px
 }
 
 .icons {
-  margin-left: 450px;
-  margin-right: 450px;
-  
   padding: 30px 15px 30px 15px;
 }
 
 .icons-list {
   display: flex;
+  justify-content: center;
+
   list-style: none;
   
   text-align: center;
