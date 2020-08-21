@@ -137,12 +137,14 @@ body {
 }
 
 /* СSS правила для тела сайта*/
+
+.site-body {
+  padding: 0 20px;
+}
+
 .site-body-container {
   
   box-sizing: border-box;
-  
-  padding-left: 15px;
-  padding-right: 15px;
   
   margin-top: 60px;
   margin-right: auto;
@@ -531,11 +533,15 @@ body {
 
 
 /* CSS-правила для footer*/
+.footer {
+  padding: 0 20px;
+}
+
 .social-media-container {
   background-color: #e5e5e5;
   
   box-sizing: border-box;
-  width: 90%;
+  width: 100%;
   
   padding-left: 15px;
   padding-right: 15px;
