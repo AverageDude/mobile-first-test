@@ -1,0 +1,90 @@
+body {
+	max-width: 1200px;
+}
+
+/* CSS-правила для Header */
+.header {
+	background-image: url('../images/banner-bg-tablet.jpg');
+}
+
+.header-container {
+	padding: 0 35px;
+
+	width: auto;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 40px;
+}
+
+.header-logo-container {
+	padding-top: 0;
+}
+
+.menu {
+	
+}
+
+.header-text-container {
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+
+.header-text {
+	width: 85%;
+	font-size: 40px;
+}
+
+
+/* CSS-правила для тела сайта */
+.site-body-container {
+  display: flex;
+
+  margin-top: 50px;
+}
+
+
+/* CSS-правила для main - основной (левой части тела сайта)*/
+.main {
+  background-color: ;
+  
+  box-sizing: border-box;
+  width: 60%;
+  margin-right: 5%;
+}
+
+.article {
+	margin-top: 40px;
+}
+
+.article-caption-text {
+	font-size: 17px;
+}
+
+.article-date-and-author {
+	margin-top: 40px;
+}
+
+.article-text {
+	font-size: 15px;
+
+	margin-top: 35px;
+}
+
+
+/* CSS-правила для section - неосновной части (правой части тела сайта)*/
+.section {
+	width: 35%;
+}
+
+.section-container {
+	margin-top: 60px;
+}
+
+.section-container:first-Child {
+	margin-top: 0;
+}
+
