@@ -137,19 +137,20 @@ body {
 }
 
 /* СSS правила для тела сайта*/
-
 .site-body {
-  padding: 0 20px;
+  margin-top: 45px;
 }
 
-.site-body-container {
-  
+.site-main-body-container {
   box-sizing: border-box;
   
   margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
+
+  padding: 0 20px;
 }
+
 
 /* CSS-правила для section.trendy - часть "Сейчас в тренде" */
 
@@ -158,13 +159,60 @@ body {
 }
 
 .trendy-article {
-  background-image: url('../images/trend1.jpg');
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
   height: 235px;
 
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
-.trendy-container-content {
+.line-for-caption {
+  height: 4px;
+  width: 65px;
+
+  background-color: rgb(225, 217, 189);
+
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.trendy-article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: black;
+  opacity: 0.6;
+}
+
+.trendy-article:last-Child {
+  margin-bottom: 0;
+}
+
+.trendy-image {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+}
+
+.trendy-content-container {
+  padding: 0 20px;
+
+  z-index: 1;
+}
+
+.trendy-content {
+  margin-bottom: 15px;
+
   border: 2px solid #8f8351;
 
   padding-top: 30px;
@@ -173,6 +221,12 @@ body {
 }
 
 .trendy-article-caption-text{
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  font-size: 16px;
+  font-weight: bold;
+  
   margin: 0;
 
   color: #ffffff;
@@ -239,14 +293,7 @@ body {
   margin-top: 15px;
 }
 
-.article-caption-text {
-  text-transform: uppercase;
-  text-decoration: none;
-  
-  font-size: 16px;
-  font-weight: bold;
-  
-  
+.article-caption-text {  
   color: #000;
 }
 
@@ -532,9 +579,128 @@ body {
 }
 
 
+/* CSS-правила для Our-Products*/
+.our-product-container {
+  padding: 0 20px;
+}
+
+.our-product-article {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.our-product-article:first-Child {
+  margin-top: 40px;
+}
+
+.our-product-img {
+  /*
+  position: absolute;
+  left: 7.465%; - идеальная середина
+  */
+  display: block;
+
+  height: 285px;
+  width: 85%;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -30px;
+}
+
+.our-product-caption-and-text-container {
+  /*
+  position: absolute;
+  top: 250px;
+  */
+
+  margin-top: 10px;
+
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border: 3px solid #d0c090;
+}
+
+.our-product-caption-container {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.our-product-caption {
+  margin: 0;
+}
+
+.our-product-caption-text {
+  /* Назначил блочное значение, 
+  чтобы убрать лишние отступы ссылки*/
+  display: block;
+
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #000;
+}
+
+.our-product-text {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.our-product-text-link {
+  color: #bba76b;
+
+  text-decoration: none;
+}
+
+.our-product-price-container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 25px;
+}
+
+.price-tag {
+  font-weight: bold;
+  font-size: 20px;
+
+  margin: 0;
+}
+
+.first-price-tag {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.our-product-price-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  border: none;
+  background-color: #b59f5b;
+  color: #ffffff;
+
+  height: 50px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding: 0 30px;
+}
 /* CSS-правила для footer*/
 .footer {
   padding: 0 20px;
+  margin-top: 40px
 }
 
 .social-media-container {
@@ -547,7 +713,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px
 }
 
 .icons {
