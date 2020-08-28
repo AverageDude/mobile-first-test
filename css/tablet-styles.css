@@ -40,12 +40,32 @@ body {
 
 
 /* CSS-правила для тела сайта */
-.site-body-container {
+.site-main-body-container {
   display: flex;
 
   margin-top: 50px;
 }
 
+
+/* CSS-правила для aside - Сейчас в тренде */
+
+.articles-caption {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.trendy-article {
+	width: 49%;
+}
+
+.trendy-article:nth-Child(odd) {
+	margin-right: 1%;
+}
+
+.trendy-article:nth-Child(n+3) {
+	margin-top: 1%;
+}
 
 /* CSS-правила для main - основной (левой части тела сайта)*/
 .main {
@@ -88,3 +108,33 @@ body {
 	margin-top: 0;
 }
 
+/* CSS-правила для нижней части ("Наши изделия") тела сайта*/
+.aside {
+	margin-top: 50px;
+}
+
+.our-products-content-container {
+	display: flex;
+	flex-wrap: wrap;
+/*
+	justify-content: space-between;
+	align-items: baseline;
+	*/
+	margin-top: 40px;
+}
+
+.our-product-article {
+	margin-top: 0;
+
+	width: 49%;
+
+	margin-right: 1%;
+}
+
+.our-product-article:first-Child {
+	margin-top: 0;
+}
+
+.our-product-article:last-Child {
+	margin-right: 0;
+}
