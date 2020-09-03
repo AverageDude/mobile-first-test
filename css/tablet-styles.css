@@ -2,6 +2,11 @@ body {
 	max-width: 1200px;
 }
 
+/* CSS-правила для Popup*/
+.popup-container {
+	width: 50%;
+}
+
 /* CSS-правила для Header */
 .header {
 	background-image: url('../images/banner-bg-tablet.jpg');

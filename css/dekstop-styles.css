@@ -3,6 +3,10 @@ body {
 	max-width: inherit;
 }
 
+/* CSS-правила для Popup*/
+.popup-container {
+	width: 25%;
+}
 
 /* CSS-правила для Header */
 .header {

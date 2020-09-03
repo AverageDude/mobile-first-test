@@ -19,6 +19,10 @@ body {
   padding: 0;
 }
 
+.body {
+  position: relative;
+}
+
 /* CSS-правила для Header */
 .header {
   position: relative;
@@ -81,6 +85,118 @@ body {
   
 }
 
+/* CSS-правила для Popup*/
+.popup-container {
+  
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 2;
+
+  margin: auto;
+  left: 0;
+  right: 0;
+  
+  box-sizing: border-box;
+  width: 90%;
+
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+/* Маска (затемнение) для Поп-апа 
+.body::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: #000;
+  opacity: 0.6;
+
+}
+*/
+.form-group {
+  margin-top: 30px;
+}
+
+.label-span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field {
+  vertical-align: top;
+  
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  
+  padding-left: 20px;
+  border: none;
+  
+  background-color: #f4f7f6;
+  
+  font-size: 13px;
+}
+
+.select {
+  padding-right: 40px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-size: 13px;
+  background-image: url(../svg/form-arrows.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.radio {
+  
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  
+}
+
+.radio-text {
+  margin-right: 30px;
+}
+
+.radio-text::before {
+  content: "";
+  vertical-align: top;
+
+  margin-right: 5px;
+
+  display: inline-block;
+  
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../svg/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+.radio:checked + .radio-text::before  {
+  background-image: url(../svg/form-circle.svg);
+}
+
+.text-field {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.hidden {
+  display: none;
+}
 /* Правила для стилей меню (не бургер) */
 .menu {
   display: none;
@@ -420,22 +536,6 @@ body {
   position: relative;
 }
 
-
-.field {
-  vertical-align: top;
-  
-  box-sizing: border-box;
-  height: 50px;
-  width: 270px;
-  
-  padding-left: 20px;
-  border: none;
-  
-  background-color: #f4f7f6;
-  
-  font-size: 13px;
-}
-
 .search-field {
   width: 80%;
 }
@@ -476,7 +576,7 @@ body {
   width: 100%;
 }
 
-.subscribe-button {
+.button {
   display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -487,7 +587,7 @@ body {
   width: 100%;
 }
 
-.subscribe-button-text {
+.button-text {
   text-transform: uppercase;
   
   font-size: 14px;
