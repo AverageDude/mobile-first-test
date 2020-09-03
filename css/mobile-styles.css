@@ -368,14 +368,14 @@ body {
 
 
 .container-caption::after{
-  position: absolute;
   content: "";
-  
-  top: 30px;
-  right: 40%;
-  
+  display: block;
+
   height: 4px;
   width: 65px;
+
+  margin: 10px auto 0;
+
   background-color: #e1d9bd; 
 }
 
