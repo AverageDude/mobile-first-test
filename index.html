@@ -9,14 +9,59 @@
   <link rel="stylesheet" href="css/dekstop-styles.css" media="(min-width: 1200px)">
 </head>
 <body>
-<header class="header">
+	<div class="body">
+	<div class="popup-container hidden" >
+		<div class="container-caption">Ваш фидбек</div>
+		<form class="form">
+	   <div class="form-group">
+	  	 <label class="select-group">
+	  		 <span class="select-label label-span">Как часто вы заходите на сайт?</span>
+	  		 <select class="select field">
+	  			 <option value="Everyday">Почти каждый день</option>
+	  			 <option value="OnceInAWeek">Раз в неделю</option>
+	  			 <option value="OnceInAMonth">Раз в месяц</option>
+	  			 <option value="FirstTime">Первый раз</option>
+	  		 </select>
+	  	 </label>
+	   </div>
+	   <div class="form-group">
+	  	 <label class="label">
+	  		 <span class="radio-label label-span">Вы подписаны на e-mail-рассылку?</span>
+	  		 <div class="radio-container">
+	  		  <label class="radio-label"> 
+	  				<input type="radio" class="radio" name="email-subscription" checked>
+	  			  <span class="radio-text">Да</span>
+	  			</label>
+	  			<label class="radio-label">
+	  				<input type="radio" class="radio" name="email-subscription">
+	  				<span class="radio-text">Нет</span>
+	  			 </label> 
+	  		 </div>
+	  	 </label>
+	   </div>
+  	 <div class="form-group">
+	  	 <label class="label">
+	  		 <span class="text-label label-span">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+	  		 <input type="text" class="field text-field" placeholder="Может, больше рецептов?" required>
+	  	 </label>
+	   </div>
+	   <button class="button">
+	   	<p class="button-text">Отправить</p>
+	   </button>
+		</form>
+	</div>
+
+	<header class="header">
   <div class="header-container">
+  	<div class="burger-container">
+      		<div class="burger"></div>
+    </div>
     <div class="menu-and-text-container">
       <div class="menu-container">
-      <div class="header-logo-container">
-        <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Логотип сайта" class="header-logo">
-      </div>
-      <nav class="menu">
+      	<div class="header-logo-container">
+        <img src="svg/noemi-logo.svg" alt="Логотип сайта" class="header-logo">
+      	</div>
+     	  <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
             <a href="" class="menu-link">главная</a>
@@ -37,16 +82,16 @@
             <a href="" class="menu-link">контакты</a>
           </li>
         </ul>
-      </nav>
+      	</nav>
       </div>
       <div class="header-text-container">
       <h1 class="header-text">блог о творчестве, спорте, и образе жизни</h1>
       </div>
     </div>
   </div>
-</header>
+	</header>
 
-<div class="site-body">
+	<div class="site-body">
   <div class="site-body-container">
     <div class="aside-container">
       <aside class="aside">
@@ -144,7 +189,7 @@
     <div class="site-main-body-container">
       <main class="main">
       <article class="article">
-        <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="Гуляющий по морю человек">
+        <img class="article-img" src="images/last-post1.jpg" alt="Гуляющий по морю человек">
         <div class="article-content">
           <div class="article-tags">
             <ul class="tags-list">
@@ -171,7 +216,7 @@
       </article>
 
       <article class="article">
-        <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="">
+        <img class="article-img" src="images/last-post2.jpg" alt="">
         <div class="article-content">
           <div class="article-tags">
             <ul class="tags-list">
@@ -198,7 +243,7 @@
       </article>
 
       <article class="article">
-        <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="">
+        <img class="article-img" src="images/last-post3.jpg" alt="">
         <div class="article-content">
           <div class="article-tags">
             <ul class="tags-list">
@@ -222,7 +267,7 @@
       </article>
 
       <article class="article">
-        <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="">
+        <img class="article-img" src="images/last-post4.jpg" alt="">
         <div class="article-content">
           <div class="article-tags">
             <ul class="tags-list">
@@ -248,7 +293,7 @@
       </article>
 
       <article class="article">
-        <img class="article-img" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="">
+        <img class="article-img" src="images/last-post5.jpg" alt="">
         <div class="article-content">
           <div class="article-tags">
             <ul class="tags-list">
@@ -283,7 +328,7 @@
         <div class="container-caption">новые посты</div>
         <div class="articles-container">
           <article class="recent-posts-article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="" class="recent-posts-article-img">
+            <img src="images/2.jpg" alt="" class="recent-posts-article-img">
             <div class="recent-posts-article-content">
               <time class="article-date-text">14 июня 2019</time>
               <h3 class="recent-posts-article-text">
@@ -292,7 +337,7 @@
             </div>
           </article>
           <article class="recent-posts-article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="" class="recent-posts-article-img">
+            <img src="images/7.jpg" alt="" class="recent-posts-article-img">
             <div class="recent-posts-article-content">
               <time class="article-date-text">14 июня 2019</time>
               <h3 class="recent-posts-article-text">
@@ -301,7 +346,7 @@
             </div>
           </article>
           <article class="recent-posts-article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="" class="recent-posts-article-img">
+            <img src="images/45.jpg" alt="" class="recent-posts-article-img">
             <div class="recent-posts-article-content">
               <time class="article-date-text">14 июня 2019</time>
               <h3 class="recent-posts-article-text">
@@ -310,7 +355,7 @@
             </div>
           </article>
           <article class="recent-posts-article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="" class="recent-posts-article-img">
+            <img src="images/151.jpg" alt="" class="recent-posts-article-img">
             <div class="recent-posts-article-content">
               <time class="article-date-text">14 июня 2019</time>
               <h3 class="recent-posts-article-text">
@@ -319,7 +364,7 @@
             </div>
           </article>
           <article class="recent-posts-article">
-            <img src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="" class="recent-posts-article-img">
+            <img src="images/501.jpg" alt="" class="recent-posts-article-img">
             <div class="recent-posts-article-content">
               <time class="article-date-text">14 июня 2019</time>
               <h3 class="recent-posts-article-text">
@@ -482,16 +527,16 @@
     	</aside>
     </div>
   </div>
-</div>
+	</div>
 
-<footer class="footer">
+	<footer class="footer">
   <div class="footer-container">
     <div class="social-media-container">
       <div class="icons">
         <ul class="icons-list">
           <li class="icons-list-item">
             <a href="#0" class="icons-link">
-              <img src="https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg" alt="twitter" class="icons-img">
+              <img src="svg/004-twitter.svg" alt="twitter" class="icons-img">
             </a>
           </li>
           <li class="icons-list-item">
@@ -523,7 +568,9 @@
       </a>
     </div>
   </div>
-</footer>
+	</footer>
+
+	</div>
 -->
 </body>
 </html>
