@@ -18,6 +18,11 @@ body {
 	width: auto;
 }
 
+.burger-container {
+	position: relative;
+	padding: 40px;
+}
+
 .menu-container {
 	display: flex;
 	justify-content: space-between;
@@ -26,7 +31,12 @@ body {
 }
 
 .header-logo-container {
+	position: absolute;
 	padding-top: 0;
+
+	margin-top: -20px;
+	left: 35px;
+	top: 40px;
 }
 
 .menu {

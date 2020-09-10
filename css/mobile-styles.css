@@ -56,27 +56,77 @@ body {
 }
 
 .header-container {
+  position: relative;
+  z-index: 1;
+
+  padding: 0 20px;
+}
+
+.menu-and-text-container {
   box-sizing: border-box;
-  width: 270px;
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 270px;
 
   margin-right: auto;
   margin-left: auto;
-
-  position: relative;
-  z-index: 1;
 }
 
 .menu-container {
   box-sizing: border-box;
+
   
   margin-right: auto;
   margin-left: auto;
 }
 
+.burger-container {
+  display: flex;
+
+  padding-top: 30px;
+}
+
+.burger {
+  margin-left: auto;
+
+  height: 3px;
+  width: 25px;
+
+  background-color: #ffffff;
+}
+
+.burger:hover {
+  background-color: #000;
+}
+
+.burger::after {
+  display: block;
+
+  content: "";
+
+  margin-top: 5px;
+
+  height: 3px;
+  width: 25px;
+
+  background-color: #ffffff;
+}
+
+.burger::before {
+  display: block;
+
+  content: "";
+
+  margin-top: 8px;
+
+  height: 3px;
+  width: 25px;
+
+  background-color: #ffffff;
+}
+
 .header-logo-container {
-  padding-top: 100%;
+  padding-top: 190px;
+
+  text-align: center;
 }
 
 .header-logo {
@@ -348,6 +398,9 @@ body {
   color: #ffffff;
 }
 
+.trendy-article-caption-text:hover {
+  color: #b59f5b;
+}
 /* CSS-правила для main - основной (левой) части тела сайта */
 .main {
   background-color: ;

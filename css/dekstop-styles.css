@@ -14,8 +14,11 @@ body {
 }
 
 .header-container {
-	max-width: 1920px;
+	max-width: 1200px;
 	width: auto;
+
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .header-text {
@@ -24,9 +27,17 @@ body {
 	width: 60%;
 }
 
+.burger-container {
+	display: none;
+}
+
 .header-text-container {
 	padding-top: 125px;
 	padding-bottom: 145px;
+}
+
+.menu-and-text-container {
+	max-width: inherit;
 }
 
 .menu-container {
